@@ -1,0 +1,82 @@
+@import "_Fonts";
+@import "_Mixins";
+@import "_Variables";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Alexandria", serif;
+  width: 794px;
+  height: 1123px;
+  nav {
+    background-color: $primary-color;
+    .right {
+      .imgCon {
+        img {
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+        }
+      }
+      .name {
+        @include text-style(white, 30px);
+      }
+      .job {
+        @include text-style($secondary-color, null, 300);
+      }
+    }
+    .left {
+      p {
+        @include text-style($size: 18px);
+        span {
+          @include text-style($secondary-color, 16px, 300);
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 100%;
+    .bottomLeft {
+      background-color: #edeeeb;
+    }
+    .title {
+      @include text-style($primary-color, 18px);
+    }
+    .progress {
+      height: 3px;
+      background-color: #d1d1d0;
+      .progress-bar {
+        background-color: black;
+      }
+    }
+    .subTitle {
+      @include text-style(null, 17px, 300);
+    }
+    .content {
+      @include text-style(#90908e, 16px, 300);
+    }
+    .level {
+      @include text-style($primary-color, 16px, 300);
+    }
+    .info {
+      @include text-style(null, 16px, 400);
+    }
+  }
+}

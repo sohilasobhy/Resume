@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Alexandria";
+  src: url(../Fonts/Alexandria/Alexandria-VariableFont_wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Alexandria", serif;
+  width: 794px;
+  height: 1123px;
+}
+body nav {
+  background-color: #2c446f;
+}
+body nav .right .imgCon img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+body nav .right .name {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+body nav .right .job {
+  color: #adb6c6;
+  font-weight: 300;
+}
+body nav .left p {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+body nav .left p span {
+  color: #adb6c6;
+  font-size: 16px;
+  font-weight: 300;
+}
+body .bottom {
+  height: 100%;
+}
+body .bottom .bottomLeft {
+  background-color: #edeeeb;
+}
+body .bottom .title {
+  color: #2c446f;
+  font-size: 18px;
+  font-weight: 500;
+}
+body .bottom .progress {
+  height: 3px;
+  background-color: #d1d1d0;
+}
+body .bottom .progress .progress-bar {
+  background-color: black;
+}
+body .bottom .subTitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+body .bottom .content {
+  color: #90908e;
+  font-size: 16px;
+  font-weight: 300;
+}
+body .bottom .level {
+  color: #2c446f;
+  font-size: 16px;
+  font-weight: 300;
+}
+body .bottom .info {
+  font-size: 16px;
+  font-weight: 400;
+}/*# sourceMappingURL=Index.css.map */
