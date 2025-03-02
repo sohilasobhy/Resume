@@ -1,17 +1,17 @@
-function scaling(elementId, baseWidth = 794, baseHeight = 1123) {
+function scalePageToFit(elementId, baseWidth = 794, baseHeight = 1123) {
     const element = document.getElementById(elementId);
     if (!element) return;
 
-    const scaleX = window.innerWidth / baseWidth;
-    const scaleY = window.innerHeight / baseHeight;
-    const scaleFactor = Math.min(scaleX, scaleY);
+    const parent = element.parentElement;
+    const scaleX = parent.clientWidth / baseWidth;
+    const scaleY = parent.clientHeight / baseHeight;
+
+    const scaleFactor = Math.min(scaleX, scaleY, 1);
 
     element.style.transform = `scale(${scaleFactor})`;
-    element.style.transformOrigin = "top left";
-
-
+    parent.style.height = `${baseHeight * scaleFactor}px`;
 }
 
-scaling("resumePage");
+scalePageToFit("resumePage");
 
-window.addEventListener("resize", () => scaling("resumePage"));
+window.addEventListener("resize", () => scalePageToFit("resumePage"));
