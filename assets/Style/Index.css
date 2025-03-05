@@ -27,6 +27,8 @@ body {
 }
 body .resume {
   width: 794px;
+  height: 1123px;
+  overflow-y: auto;
 }
 body .resume nav {
   background-color: #2c446f;
@@ -55,9 +57,6 @@ body .resume nav .left p span {
   font-size: 16px;
   font-weight: 300;
 }
-body .resume .bottom {
-  height: 100%;
-}
 body .resume .bottom .bottomLeft {
   background-color: #edeeeb;
 }
@@ -74,8 +73,8 @@ body .resume .bottom .title::after {
   background: linear-gradient(to right, black 0% 20%, gray 30% 100%);
   margin-top: 5px;
 }
-body .resume .bottom .course1 {
-  width: 60%;
+body .resume .bottom .date {
+  width: 41%;
 }
 body .resume .bottom .progress {
   height: 3px;

@@ -25,6 +25,8 @@ body {
   font-family: "Alexandria", serif;
   .resume {
     width: 794px;
+    height: 1123px;
+    overflow-y: auto;
     nav {
       background-color: $primary-color;
       .right {
@@ -52,7 +54,6 @@ body {
       }
     }
     .bottom {
-      height: 100%;
       .bottomLeft {
         background-color: #edeeeb;
       }
@@ -67,8 +68,8 @@ body {
           margin-top: 5px;
         }
       }
-      .course1 {
-        width: 60%;
+      .date {
+        width: 41%;
       }
       .progress {
         height: 3px;

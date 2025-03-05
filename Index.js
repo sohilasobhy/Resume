@@ -3,12 +3,21 @@ function scalePageToFit(elementId, baseWidth = 794, baseHeight = 1123) {
     if (!element) return;
 
     const parent = element.parentElement;
+    parent.removeAttribute('style');
+
     const scaleX = parent.clientWidth / baseWidth;
     const scaleY = parent.clientHeight / baseHeight;
 
-    const scaleFactor = Math.min(scaleX, scaleY, 1);
+    let scaleFactor = 1;
+
+    if (parent.clientWidth / parent.clientHeight < baseWidth / baseHeight) {
+        scaleFactor = scaleX;
+    } else {
+        scaleFactor = scaleY;
+    }
 
     element.style.transform = `scale(${scaleFactor})`;
+    element.style.transformOrigin = "top left";
     parent.style.height = `${baseHeight * scaleFactor}px`;
 }
 
